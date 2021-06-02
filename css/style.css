@@ -16,9 +16,36 @@ body {
     height: 100vh;
 }
 
+.carousel-text {
+    margin-top: 8%;
+    font-size: 26px;
+}
+
+.item-footer {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.item-footer:hover {
+    color: #ffffffca;
+}
+
+textarea {
+    border-radius: .25rem !important;
+}
+
+.form-control:focus {
+    border-color: rgb(255 97 0 / 30%);
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 30%);
+    box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 30%);
+  }
 
 .bg-light {
     background-color: #FFFFFF !important;
+}
+
+.bg-dark {
+    background-color: #252B42 !important;
 }
 
 .btn-primary {
@@ -40,3 +67,50 @@ body {
     border-color: rgb(255, 97, 0);
     box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 50%);
 }
+
+.card {
+    border: none;
+    margin: 0% 11%;
+}
+
+.form-control {
+    border-radius: 39px;
+    padding: 8px 15px;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+

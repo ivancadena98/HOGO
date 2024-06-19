@@ -1,0 +1,170 @@
+body {
+    font-family: 'SF Pro Display', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.home-title {
+    font-size: 70px;
+}
+
+.us-title {
+    font-size: 48px;
+}
+
+.vertical-line {
+    border-left: 1px solid;
+}
+
+.page-header {
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.carousel-text {
+    margin-top: 8%;
+    font-size: 26px;
+}
+
+.item-footer {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.item-footer:hover {
+    color: #ffffffca;
+}
+
+textarea {
+    border-radius: .25rem !important;
+}
+
+/************** OVERRIDE BOOSTRAP CLASSES **************/
+.form-control:focus {
+    border-color: rgb(255 97 0 / 30%);
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 30%);
+    box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 30%);
+  }
+
+.bg-light {
+    background-color: #FFFFFF !important;
+}
+
+.bg-dark {
+    background-color: #252B42 !important;
+}
+
+.btn-primary {
+    background-color: #FF6100;
+    border-color: #FF6100;
+    border-radius: 35px;
+    font-size: 20px;
+    width: 240px;
+    height: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #FF6100;
+    border-color: #FF6100;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background-color: #FF6100;
+    border-color: rgb(255, 97, 0);
+    box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 50%);
+}
+
+.card {
+    border: none;
+    margin: 0% 11%;
+}
+
+.form-control {
+    border-radius: 39px;
+    padding: 8px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    border-bottom: 1.8px solid #FF6100;
+}
+
+.nav-link {
+    padding: 0px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    border-color: rgb(37, 43, 66);
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(37 43 66 / 30%);
+    box-shadow: 0 0 0 0.25rem rgb(37 43 66 / 30%);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("/img/togger.png");
+}
+
+@media (max-width: 767px) {
+    .page-header {
+        background-image: url("/img/background-mobile.png");
+    }
+    .home-title {
+        font-size: 48px;
+    }
+    .bg-white {
+        background-color: white;
+    }
+    .bg-light {
+        background-color: #252B42 !important;
+    }
+    .us-title {
+        font-size: 40px;
+    }
+    .products-sub {
+        font-size: 18px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        border-bottom: 1.8px solid transparent;
+    }
+    
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+        justify-content: center;
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+}
+
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    .home-top {
+        margin-top: 123px;
+    }
+    .carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+.carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+

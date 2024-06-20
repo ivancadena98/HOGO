@@ -18,7 +18,7 @@ body {
 }
 
 .page-header {
-    background-image: url("/img/background.png");
+    background-image: url("HOGO/img/background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
@@ -32,8 +32,9 @@ body {
 .item-footer {
     color: #FFFFFF;
     text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
+
 .item-footer:hover {
     color: #ffffffca;
 }
@@ -42,12 +43,14 @@ textarea {
     border-radius: .25rem !important;
 }
 
+
 /************** OVERRIDE BOOSTRAP CLASSES **************/
+
 .form-control:focus {
     border-color: rgb(255 97 0 / 30%);
     -webkit-box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 30%);
     box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 30%);
-  }
+}
 
 .bg-light {
     background-color: #FFFFFF !important;
@@ -71,7 +74,8 @@ textarea {
     border-color: #FF6100;
 }
 
-.btn-check:focus+.btn-primary, .btn-primary:focus {
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
     background-color: #FF6100;
     border-color: rgb(255, 97, 0);
     box-shadow: 0 0 0 0.25rem rgb(255 97 0 / 50%);
@@ -87,7 +91,8 @@ textarea {
     padding: 8px 15px;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
     border-bottom: 1.8px solid #FF6100;
 }
 
@@ -98,6 +103,7 @@ textarea {
 .navbar-toggler {
     border: none;
 }
+
 .navbar-toggler:focus {
     border-color: rgb(37, 43, 66);
     -webkit-box-shadow: 0 0 0 0.25rem rgb(37 43 66 / 30%);
@@ -127,44 +133,52 @@ textarea {
     .products-sub {
         font-size: 18px;
     }
-
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
         border-bottom: 1.8px solid transparent;
     }
-    
-    .carousel-inner .carousel-item > div {
+    .carousel-inner .carousel-item>div {
         display: none;
     }
-    .carousel-inner .carousel-item > div:first-child {
+    .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
-    .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
         justify-content: center;
     }
-    
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link {
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link,
+    .navbar-light .navbar-nav .nav-link {
         color: white;
     }
 }
 
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
     display: flex;
 }
 
+
 /* medium and up screens */
+
 @media (min-width: 768px) {
     .home-top {
         margin-top: 123px;
     }
-    .carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
     }
-    
-    .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
     }
-}
-.carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start { 
-    transform: translateX(0);
 }
 
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}

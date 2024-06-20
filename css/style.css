@@ -116,7 +116,7 @@ textarea {
 
 @media (max-width: 767px) {
     .page-header {
-        background-image: url("/img/background-mobile.png");
+        background-image: url("../img/background-mobile.png");
     }
     .home-title {
         font-size: 48px;
